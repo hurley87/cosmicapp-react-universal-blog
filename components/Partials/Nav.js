@@ -37,7 +37,7 @@ export default class Nav extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" target="_blank" href="https://cosmicjs.com">Cosmic JS</a>
+            <a className="navbar-brand" href="/">Mike Rowes blog</a>
           </div>
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

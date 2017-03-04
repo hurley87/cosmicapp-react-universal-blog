@@ -9,7 +9,7 @@ export default class Header extends Component {
     const hero = data.page.hero
     const headline = data.page.headline
     const subheadline = data.page.subheadline
-
+    
     return (
       <div>
         <header className="intro-header" style={ { backgroundImage: "url('" + hero + "')" } }>
