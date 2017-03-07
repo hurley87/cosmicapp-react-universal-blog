@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
 import { Link } from 'react-router'
+import Header from './Header'
 
 export default class BlogList extends Component {
 
@@ -39,6 +40,7 @@ export default class BlogList extends Component {
     let articles_html = articles.map(( article ) => {
       let date_obj = new Date(article.created)
       let created = (date_obj.getMonth()+1) + '/' + date_obj.getDate() + '/' + date_obj.getFullYear()
+      console.log(article)
       return (
         <div key={ 'key-' + article.slug }>
           <div className="post-preview">
@@ -54,7 +56,14 @@ export default class BlogList extends Component {
 
     return (
       <div>
-        <div>{ articles_html }</div>
+        <Header data={ data }/>
+        <div id="main-content" className="container">
+          <div className="row">
+            <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div>{ articles_html }</div>
+           </div>
+          </div>
+        </div>
         { load_more }
       </div>
     )

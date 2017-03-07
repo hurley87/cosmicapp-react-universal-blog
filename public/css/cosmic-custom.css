@@ -1,3 +1,13 @@
+
+@font-face {
+    font-family: proBold;
+    src: url('../fonts/lineto-circular-pro-bold.woff');
+}
+
+body {
+  font-family: proBold !important;
+}
+
 .pointer{
   cursor: pointer;
 }

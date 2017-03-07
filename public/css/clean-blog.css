@@ -3,9 +3,13 @@
  * Copyright 2014 Start Bootstrap
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
+@font-face {
+    font-family: proBold;
+    src: url('../fonts/lineto-circular-pro-bold.woff');
+}
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: proBold;
   font-size: 20px;
   color: #404040;
 }
@@ -22,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: proBold;
   font-weight: 800;
 }
 a {
@@ -169,7 +173,7 @@ hr.small {
   font-size: 24px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: proBold;
   font-weight: 300;
   margin: 10px 0 0;
 }
@@ -188,13 +192,13 @@ hr.small {
   display: block;
 }
 .intro-header .post-heading .subheading {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: proBold;
   font-size: 24px;
   margin: 10px 0 30px;
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: proBold;
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
@@ -349,7 +353,7 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: proBold;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
