@@ -144,3 +144,10 @@ body {
             transform: scale(1);
   }
 }
+
+.header {
+  padding-top: 50px;
+}
+.navOverlay {
+  display: none;
+}
