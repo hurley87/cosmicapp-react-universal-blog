@@ -40,14 +40,9 @@ export default class Nav extends Component {
       <div>
         <nav className="navbar navbar-default navbar-custom navbar-fixed-top">
           <div className="container-fluid">
-            <div className="navbar-header page-scroll">
-              <button onClick={ this.showMe } type="button" className="navbar-toggle">
-                <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-              </button>
-              <a className="navbar-brand" href="/">Apologue</a>
+              <img onClick={ this.showMe } src='https://cosmicjs.com/uploads/6769e9c0-043d-11e7-9730-f928dcc5c05d-menu.svg'/>
+            <div className="navbar-header">
+              <a className="navbar-brand logo" href="/">Apologue</a>
             </div>
           </div>
         </nav> 

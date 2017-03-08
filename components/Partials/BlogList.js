@@ -6,12 +6,6 @@ import Header from './Header'
 
 export default class BlogList extends Component {
 
-  scrollTop(){
-    $('html, body').animate({
-      scrollTop: $("#main-content").offset().top
-    }, 500)
-  }
-
   render(){
     
     let data = this.props.data
@@ -45,7 +39,7 @@ export default class BlogList extends Component {
         <div key={ 'key-' + article.slug }>
           <div className="post-preview">
             <h2 className="post-title pointer">
-              <Link to={ '/blog/' + article.slug } onClick={ this.scrollTop }>{ article.title }</Link>
+              <Link to={ '/blog/' + article.slug }>{ article.title }</Link>
             </h2>
             <p className="post-meta">Posted by <a href="https://cosmicjs.com" target="_blank">Cosmic JS</a> on { created }</p>
           </div>
@@ -56,7 +50,6 @@ export default class BlogList extends Component {
 
     return (
       <div>
-        <Header data={ data }/>
         <div id="main-content" className="container">
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

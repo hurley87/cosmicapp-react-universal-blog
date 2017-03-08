@@ -1,0 +1,26 @@
+
+.container {
+	padding-top: 50px;
+}
+
+.navOverlay {
+	background: black;
+    color: white;
+    z-index: 9999999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.navOverlay a{
+	color: white;
+}
+
+.navOverlay li {
+	width: 50%;
+}
+.navOverlay .closeMe {
+	float: right;
+}

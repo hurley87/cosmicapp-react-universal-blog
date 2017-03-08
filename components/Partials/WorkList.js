@@ -8,12 +8,6 @@ import AppDispatcher from '../../dispatcher/AppDispatcher'
 
 export default class WorkList extends Component {
 
-  scrollTop(){
-    $('html, body').animate({
-      scrollTop: $("#main-content").offset().top
-    }, 500)
-  }
-
   render(){
     
     let data = this.props.data
@@ -46,7 +40,7 @@ export default class WorkList extends Component {
         <div key={ 'key-' + work_item.slug }>
           <div className="post-preview">
             <h2 className="post-title pointer">
-              <Link to={ '/work/' + work_item.slug } onClick={ this.scrollTop }>{ work_item.title }</Link>
+              <Link to={ '/work/' + work_item.slug }>{ work_item.title }</Link>
             </h2>
             <p className="post-meta">Posted by <a href="https://cosmicjs.com" target="_blank">Cosmic JS</a> on { created }</p>
           </div>

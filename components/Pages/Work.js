@@ -51,7 +51,6 @@ export default class Work extends Component {
       
       const work_items = data.work_items
       
-      // Get current page slug
       const slug = this.props.params.slug
       const work_items_object = _.indexBy(work_items, 'slug')
       const work_item = work_items_object[slug]
