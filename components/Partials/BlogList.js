@@ -35,7 +35,6 @@ export default class BlogList extends Component {
     let articles_html = articles.map(( article ) => {
       let date_obj = new Date(article.created)
       let created = (date_obj.getMonth()+1) + '/' + date_obj.getDate() + '/' + date_obj.getFullYear()
-      console.log(article)
       let meta = []
       if(article) meta = article.metafields;
       let head = 'headline'      
