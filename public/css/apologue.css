@@ -7,7 +7,7 @@
 	background: black;
     color: white;
     z-index: 9999999;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
@@ -24,3 +24,27 @@
 .navOverlay .closeMe {
 	float: right;
 }
+.navOverlay h3{
+    color: blue;
+    text-transform: uppercase;
+}
+
+.navOverlay img {
+    float: right;
+    padding: 15px;
+}
+
+.navOverlay ul {
+    padding-left: 0px;
+}
+
+.navOverlay li{
+    list-style: none;
+    padding-left: 0px;
+}   
+
+.navOverlay a:hover {
+    text-decoration: none;
+    padding-left: 15px;
+    transition: 1s all ease;
+}   

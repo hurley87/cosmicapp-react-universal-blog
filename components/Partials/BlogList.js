@@ -36,9 +36,12 @@ export default class BlogList extends Component {
       let created = (date_obj.getMonth()+1) + '/' + date_obj.getDate() + '/' + date_obj.getFullYear()
       console.log(article)
       const meta = article.metafields;
-      const head = meta[0].value;
-      const subhead = meta[1].value;
-      const img = meta[2].url;
+      let head = 'headline'      
+      if(meta[0]) head = meta[0].value;
+      let subhead = 'subheadline';
+      if(meta[1]) subhead = meta[1].value; 
+      let img = 'https://cosmicjs.com/uploads/78921f50-00f1-11e7-bf7e-59fc82b92268.jpeg'
+      if(meta[2]) img = meta[2].url;
       return (
         <div key={ 'key-' + article.slug }>
           <div className="post-preview">

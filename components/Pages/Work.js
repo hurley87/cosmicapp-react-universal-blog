@@ -61,7 +61,6 @@ export default class Work extends Component {
 
     return (
       <div>
-        <Header data={ data }/>
           <div id="main-content" className="container">
             <div className="row">
               <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
