@@ -19,7 +19,7 @@ export default class Blog extends Component {
 
   componentDidMount(){
     const data = this.props.data
-    document.title = config.site.title + ' | ' + data.page.title
+    document.title = config.site.title
   }
 
   getPageData(){

@@ -82,7 +82,11 @@ export function getPageData(page_slug, post_slug){
   const data = AppStore.data
   const pages = data.pages
   const page = _.findWhere(pages, { slug: page_slug })
-  const metafields = page.metafields
+  console.log(page)
+  let metafields = false
+  if(page) {
+    metafields = page.metafields
+  }
   if(metafields){
     const hero = _.findWhere(metafields, { key: 'hero' })
     page.hero = config.bucket.media_url + '/' + hero.value
