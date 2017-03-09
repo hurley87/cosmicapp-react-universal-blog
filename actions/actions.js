@@ -82,20 +82,34 @@ export function getPageData(page_slug, post_slug){
   const data = AppStore.data
   const pages = data.pages
   const page = _.findWhere(pages, { slug: page_slug })
-  console.log(page)
   let metafields = false
   if(page) {
     metafields = page.metafields
   }
   if(metafields){
     const hero = _.findWhere(metafields, { key: 'hero' })
-    page.hero = config.bucket.media_url + '/' + hero.value
+    if(hero) {
+      page.hero = config.bucket.media_url + '/' + hero.value
+    } else {
+      page.hero = "https://cosmicjs.com/uploads/78921f50-00f1-11e7-bf7e-59fc82b92268.jpeg"
+    }
+    
 
     const headline = _.findWhere(metafields, { key: 'headline' })
-    page.headline = headline.value
+    if(headline) {
+      page.headline = headline.value
+    } else {
+      page.headline = 'headline'
+    }
+    
 
     const subheadline = _.findWhere(metafields, { key: 'subheadline' })
-    page.subheadline = subheadline.value
+    if(subheadline) {
+      page.subheadline = subheadline.value
+    } else {
+      page.subheadline = 'subheadline'
+    }
+    
   }
 
   if(post_slug){

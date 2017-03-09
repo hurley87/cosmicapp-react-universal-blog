@@ -17,7 +17,8 @@ import NoMatch from './components/Pages/NoMatch'
 export default (
   <Route path="/" data={AppStore.data} component={App}>
     <IndexRoute component={Blog}/>
-    <Route path="about" component={Default}/>
+    <Route path="terms" component={Default}/>
+    <Route path="privacy" component={Default}/>
     <Route path="contact" component={Default}/>
     <Route path="work" component={Work}/>
     <Route path="/work/:slug" component={Work}/>
