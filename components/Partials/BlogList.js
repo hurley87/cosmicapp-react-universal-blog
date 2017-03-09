@@ -35,13 +35,19 @@ export default class BlogList extends Component {
       let date_obj = new Date(article.created)
       let created = (date_obj.getMonth()+1) + '/' + date_obj.getDate() + '/' + date_obj.getFullYear()
       console.log(article)
+      const meta = article.metafields;
+      const head = meta[0].value;
+      const subhead = meta[1].value;
+      const img = meta[2].url;
       return (
         <div key={ 'key-' + article.slug }>
           <div className="post-preview">
             <h2 className="post-title pointer">
-              <Link to={ '/blog/' + article.slug }>{ article.title }</Link>
+              <Link to={ '/blog/' + article.slug }>{ head }</Link>
+              <small>{subhead}</small>
             </h2>
-            <p className="post-meta">Posted by <a href="https://cosmicjs.com" target="_blank">Cosmic JS</a> on { created }</p>
+            <img src={img} />
+            <p className="post-meta">Posted on { created }</p>
           </div>
           <hr/>
         </div>
