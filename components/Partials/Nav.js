@@ -22,6 +22,8 @@ export default class Nav extends Component {
     
     const data = this.props.data
     const nav_items = data.globals.nav_items
+    const logo = this.props.logo;
+    const menu = this.props.menu;
     
     // Prevent initial null
     if(!nav_items){

@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import _ from 'lodash'
 import { Link } from 'react-router'
 import Header from './Header'
+import Nav from './Nav'
 
 export default class BlogList extends Component {
 
@@ -35,7 +36,8 @@ export default class BlogList extends Component {
       let date_obj = new Date(article.created)
       let created = (date_obj.getMonth()+1) + '/' + date_obj.getDate() + '/' + date_obj.getFullYear()
       console.log(article)
-      const meta = article.metafields;
+      let meta = []
+      if(article) meta = article.metafields;
       let head = 'headline'      
       if(meta[0]) head = meta[0].value;
       let subhead = 'subheadline';
@@ -59,6 +61,7 @@ export default class BlogList extends Component {
 
     return (
       <div>
+        <Nav data={ data }/>
         <div id="main-content" className="container">
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

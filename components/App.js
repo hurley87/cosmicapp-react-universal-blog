@@ -59,7 +59,6 @@ export default class App extends Component {
 
     return (
       <div>
-        <Nav data={ data }/>
         { Routes }
         <Footer data={ data }/>
       </div>
