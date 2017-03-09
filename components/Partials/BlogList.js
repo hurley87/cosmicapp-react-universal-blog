@@ -42,11 +42,11 @@ export default class BlogList extends Component {
       return (
         <div key={ 'key-' + article.slug }>
           <div className="post-preview">
+            <img src={img} />
             <h2 className="post-title pointer">
               <Link to={ '/blog/' + article.slug }>{ head }</Link>
               <small>{subhead}</small>
             </h2>
-            <img src={img} />
             <p className="post-meta">Posted on { created }</p>
           </div>
           <hr/>
