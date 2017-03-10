@@ -45,15 +45,15 @@ export default class BlogList extends Component {
       if(meta[2]) img = meta[2].url;
       return (
         <div key={ 'key-' + article.slug }>
-          <div className="post-preview">
+          <div className="preview"><Link to={ '/blog/' + article.slug }>
             <img src={img} />
-            <h2 className="post-title pointer">
-              <Link to={ '/blog/' + article.slug }>{ head }</Link>
-              <small>{subhead}</small>
+            <h2 className="title pointer">
+              { head }
+              <span className='tagline'>{subhead}</span>
             </h2>
-            <p className="post-meta">Posted on { created }</p>
-          </div>
-          <hr/>
+            <p className="time">{ created }</p>
+            <hr/>
+          </Link></div>
         </div>
       )
     })
@@ -66,7 +66,7 @@ export default class BlogList extends Component {
         <Nav data={ data } menu={menu} logo={logo}/>
         <div id="main-content" className="container">
           <div className="row">
-            <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 index">
               <div>{ articles_html }</div>
            </div>
           </div>

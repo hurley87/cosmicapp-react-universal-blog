@@ -1,3 +1,12 @@
+@font-face {
+    font-family: proBook;
+    src: url('../fonts/lineto-circular-pro-book.woff');
+}
+
+@font-face {
+    font-family: proBold;
+    src: url('../fonts/lineto-circular-pro-bold.woff');
+}
 
 .container {
 	padding-top: 50px;
@@ -47,4 +56,66 @@
     text-decoration: none;
     padding-left: 15px;
     transition: 1s all ease;
-}   
+} 
+
+.article h2{
+    color: red;
+}  
+
+.article p {
+    color: green;
+    margin: 0;
+}
+
+.preview a:hover {
+    text-decoration: none;
+    color: #0D97FF;
+}
+
+
+.preview h2 {
+    font-family: proBold;
+    letter-spacing: -0.2px;
+    line-height: 48px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.preview span {
+    color: #747480;
+    font-family: proBook;
+}
+
+.preview a:hover span {
+    color: #282828;
+}
+
+.preview .time {
+    color: #747480;
+    font-size: 16px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-family: proBook;
+}
+
+.index {
+    max-width: 760px;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
