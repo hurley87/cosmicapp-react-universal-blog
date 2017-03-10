@@ -41,6 +41,9 @@ export default class Nav extends Component {
     const style = {
       cursor: 'pointer'
     }
+    const noPadding = {
+      padding: '0px'
+    }
 
     return (
       <div>
@@ -48,7 +51,7 @@ export default class Nav extends Component {
           <div className="container-fluid">
               <img style={style} onClick={ this.showMe } src={menu}/>
             <div className="navbar-header">
-              <a className="navbar-brand logo" href="/">Apologue</a>
+              <a className="navbar-brand logo" href="/"><img style={noPadding} src={logo}/></a>
             </div>
           </div>
         </nav> 

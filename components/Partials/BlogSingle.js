@@ -14,7 +14,7 @@ export default class BlogSingle extends Component {
       marginBottom: 20
     }
 
-    const menu = "https://cosmicjs.com/uploads/caa90140-04fd-11e7-af3c-bb44d6707cb7-hamburger.svg"
+    const menu = "https://cosmicjs.com/uploads/3dbcdbf0-0596-11e7-af3c-bb44d6707cb7-Hamburger-white.svg"
     const logo = "https://cosmicjs.com/uploads/ca868520-04fd-11e7-af3c-bb44d6707cb7-arrow2.svg"
     
     return (

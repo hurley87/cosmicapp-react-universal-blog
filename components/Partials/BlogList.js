@@ -59,10 +59,11 @@ export default class BlogList extends Component {
     })
 
     const menu = 'https://cosmicjs.com/uploads/caa90140-04fd-11e7-af3c-bb44d6707cb7-hamburger.svg';
+    const logo = "https://cosmicjs.com/uploads/3dbe6290-0596-11e7-af3c-bb44d6707cb7-Apologue-logo.svg";
 
     return (
       <div>
-        <Nav data={ data } menu={menu} logo="Apologue"/>
+        <Nav data={ data } menu={menu} logo={logo}/>
         <div id="main-content" className="container">
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
