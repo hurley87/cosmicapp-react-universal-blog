@@ -116,12 +116,14 @@ export function getPageData(page_slug, post_slug){
     if(page_slug === 'home'){
       const articles = data.articles
       const article = _.findWhere(articles, { slug: post_slug })
-      page.title = article.title
+      if(page) page.title = article.title
+      
     }
     if(page_slug === 'work'){
       const work_items = data.work_items
       const work_item = _.findWhere(work_items, { slug: post_slug })
-      page.title = work_item.title
+      if(page) page.title = work_item.title
+      
     }
   }
   AppStore.data.page = page
