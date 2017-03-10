@@ -46,7 +46,7 @@ export default class Nav extends Component {
       <div>
         <nav className="navbar navbar-default navbar-custom navbar-fixed-top">
           <div className="container-fluid">
-              <img style={style} onClick={ this.showMe } src='https://cosmicjs.com/uploads/6769e9c0-043d-11e7-9730-f928dcc5c05d-menu.svg'/>
+              <img style={style} onClick={ this.showMe } src={menu}/>
             <div className="navbar-header">
               <a className="navbar-brand logo" href="/">Apologue</a>
             </div>
@@ -61,7 +61,7 @@ export default class Nav extends Component {
               </ul>
             </div>
             <div className='col-xs-4'>
-              <img style={style} onClick={ this.closeMe } src='https://cosmicjs.com/uploads/0ea1d170-04e4-11e7-a5a9-ffe74738971e-Cross.svg'/>
+              <img style={style} onClick={ this.closeMe } src='https://cosmicjs.com/uploads/caa7efd0-04fd-11e7-af3c-bb44d6707cb7-cross2.svg'/>
             </div>
           </div>
         </div>

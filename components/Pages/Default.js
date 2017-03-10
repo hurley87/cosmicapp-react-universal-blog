@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 import config from '../../config'
+import Nav from '../Partials/Nav'
 
 // Components
 import Header from '../Partials/Header'
@@ -45,9 +46,11 @@ export default class Default extends Component {
     const page = data.page
 
     let main_content = <div dangerouslySetInnerHTML={ {__html: page.content } }></div>
+    const menu = 'https://cosmicjs.com/uploads/caa90140-04fd-11e7-af3c-bb44d6707cb7-hamburger.svg';
 
     return (
        <div>
+        <Nav data={ data } menu={menu}/>
         <div id="main-content" className="container">
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
