@@ -56,15 +56,14 @@ export default class Nav extends Component {
           </div>
         </nav> 
         <div className='navOverlay'>
-          <div className='container-fluid row'>
-            <div className='col-xs-8'>
-              <h3>Elsewhere</h3>
-              <ul >
-                { menu_items }
-              </ul>
-            </div>
-            <div className='col-xs-4'>
-              <img style={style} onClick={ this.closeMe } src='https://cosmicjs.com/uploads/caa7efd0-04fd-11e7-af3c-bb44d6707cb7-cross2.svg'/>
+          <img style={style} onClick={ this.closeMe } src='https://cosmicjs.com/uploads/caa7efd0-04fd-11e7-af3c-bb44d6707cb7-cross2.svg'/>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-6 col-lg-offset-2 col-md-4 col-md-offset-4'>
+                <ul >
+                  { menu_items }
+                </ul>
+              </div>
             </div>
           </div>
         </div>

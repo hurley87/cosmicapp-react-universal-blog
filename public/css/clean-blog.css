@@ -69,6 +69,7 @@ hr.small {
 .navbar-custom img {
   float: right;
   padding: 15px 15px;
+  padding-right: 0px;
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -100,7 +101,6 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
