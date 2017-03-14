@@ -1,6 +1,11 @@
 @font-face {
+    font-family: roman;
+    src: url('../fonts/ChronicleTextRoman.woff');
+}
+
+@font-face {
     font-family: proBook;
-    src: url('../fonts/Avenir-Book.woff');
+    src: url('../fonts/lineto-circular-pro-book.woff');
 }
 
 @font-face {
@@ -70,7 +75,7 @@
 
 .preview a:hover {
     text-decoration: none;
-    color: #0D97FF;
+    color: #3455DB;
 }
 
 
@@ -83,27 +88,27 @@
 }
 
 .preview span {
-    color: #747480;
-    font-family: proBook;
+    color: #4F5A65;
+    font-family: proBold;
 }
 
 .preview a:hover span {
-    color: #282828;
+    color: #000;
 }
 
 .preview .time {
-    color: #747480;
+    color: #4F5A65;
     font-size: 16px;
     margin-top: 0px;
     text-transform: uppercase;
-    font-family: proBook;
+    font-family: roman;
 }
 
 .preview p {
-    font-family: proBook;
+    font-family: roman;
     font-size: 21px;
     line-height: 31px;
-    color: #747480;
+    color: #4F5A65;
     margin: 0;
     font-weight: 100;
     letter-spacing: 0.3px;
@@ -114,6 +119,48 @@
     padding-top: 20px;
 }
 
+.blogpage a {
+    border-bottom: 4px solid #FFE9A8;
+    text-decoration: none;
+    padding: 3px;
+    padding-bottom: 0px;
+}
+
+.blogpage a:hover {
+    color: #000;
+    background-color: #FFE9A8;
+}
+
+.shareBtn {
+    color: #fff;
+    border-bottom: none !important;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 150px; 
+    padding: 10px 15px !important;
+    margin-right: 10px;
+}
+
+.shareBtn img {
+    height: 15px;
+    position: relative;
+    bottom: 1px;
+}
+ 
+.facebook, .facebook:hover {
+    background-color: #39579A !important;
+    color: white !important;
+}
+
+
+.twitter, .twitter:hover {
+    background-color: #059FF5 !important;
+    color: white !important;
+}
+
+.blogContent {
+    padding-top: 15px;
+}
 
 
 

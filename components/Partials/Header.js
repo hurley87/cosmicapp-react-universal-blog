@@ -7,7 +7,7 @@ export default class Header extends Component {
     
     const data = this.props.data
     const article = this.props.article;
-    let hero = 'https://cosmicjs.com/uploads/78921f50-00f1-11e7-bf7e-59fc82b92268.jpeg';
+    let hero = this.props.hero;
     if(data.page) hero = data.page.hero
     let headline = 'Righhhtttttt'
     if(data.page) headline = data.page.headline
